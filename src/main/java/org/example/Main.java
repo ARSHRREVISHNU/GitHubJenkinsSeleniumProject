@@ -1,7 +1,21 @@
 package org.example;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+    public static WebDriver driver;
+
+    public void initialization(String url){
+
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\IdeaProjects\\GithubJenkinsSeleniumProject\\src\\main\\resources\\chromedriver.exe");
+        driver= new ChromeDriver();
+
+
+        driver.get("http://localhost:8080/job/SeleniumGithub/1/console");
     }
+
+
 }
