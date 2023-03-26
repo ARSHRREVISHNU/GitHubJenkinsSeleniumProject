@@ -10,7 +10,7 @@ public class Main {
 
     public void initialization(String url){
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\IdeaProjects\\GithubJenkinsSeleniumProject\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver= new ChromeDriver();
 
 
