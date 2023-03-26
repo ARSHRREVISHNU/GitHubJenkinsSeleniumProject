@@ -15,7 +15,7 @@ public class Main {
 
 
         driver.get("http://localhost:8080/job/SeleniumGithub/1/console");
-        System.out.println(driver.getTitle());
+        System.out.println("The page title is"+driver.getTitle());
     }
 
 
