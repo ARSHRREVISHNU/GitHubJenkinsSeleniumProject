@@ -1,0 +1,23 @@
+pipeline {
+
+    agent any
+
+    stages{
+
+        stage('Git') {
+
+            steps{
+                   git branch: 'seleniumJenkinsFeatureBranch', credentialsId: '7f835a1c-8588-43b1-905f-8abb000f5ae5', url: 'https://github.com/ARSHRREVISHNU/GitHubJenkinsSeleniumProject.git'
+            }
+        }
+
+        stage('Maven clean and test')
+        {
+            steps{
+                bat 'mvn clean test'
+            }
+        }
+    }
+
+
+}
