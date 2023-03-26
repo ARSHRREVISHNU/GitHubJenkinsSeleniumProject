@@ -13,9 +13,9 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver= new ChromeDriver();
 
-
         driver.get("http://localhost:8080/job/SeleniumGithub/1/console");
         System.out.println("The page title is"+driver.getTitle());
+
     }
 
 
